@@ -20,7 +20,7 @@ module.exports = {
         use: [
           "style-loader", // inject style into dom
           "css-loader", // turn css into commnon js
-          "sass-loader", // turn scss into css
+          "postcss-loader",
         ],
       },
     ],
