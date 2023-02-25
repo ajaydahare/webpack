@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.scss";
 
 const App = () => {
   const [counter, setCounter] = useState(0);
@@ -7,8 +8,10 @@ const App = () => {
   };
   return (
     <>
-      <h1>Counter : {counter}</h1>
-      <button onClick={handleAdd}>+Add</button>
+      <h1 className="title">Counter : {counter}</h1>
+      <button className="addButton" onClick={handleAdd}>
+        +Add
+      </button>
     </>
   );
 };
